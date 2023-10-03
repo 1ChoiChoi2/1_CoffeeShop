@@ -1,0 +1,11 @@
+nav {
+    height: 80px;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.nav__logo {
+    display: flex;
+    flex-direction: column;
+}
