@@ -1,0 +1,39 @@
+#landing__contacts {
+    background-color: var(--color-black);
+}
+
+.landing__contacts--container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+}
+
+.landing__contact {
+    display: flex;
+    padding: 20px;
+}
+
+.landing__contact--icon {
+    color: var(--color-brown);
+}
+
+.landing__contact--detail {
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.landing__contact--title {
+    font-family: var(--font-family-primary);
+    color: var(--color-white);
+}
+
+.landing__contact--description {
+    font-family: var(--font-family-secondary);
+    color: var(--color-grey);
+    font-size: 15px;
+    font-weight: 300;
+}
