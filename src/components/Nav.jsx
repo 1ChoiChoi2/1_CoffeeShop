@@ -34,7 +34,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/cart" className="nav__link nav__icon">
-              <FontAwesomeIcon icon="shopping-cart"/>
+              <FontAwesomeIcon icon="shopping-cart" />
               <span className="cart__length">2</span>
             </Link>
           </li>

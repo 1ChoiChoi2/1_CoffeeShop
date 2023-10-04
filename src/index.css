@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Custom */
 :root {
@@ -11,6 +11,7 @@
   /* Font Family */
   --font-family-primary: 'Josefin Sans', sans-serif;
   --font-family-secondary: 'Poppins', sans-serif;
+  --font-family-teitary: 'Great Vibes', cursive;
 }
 
 /* GLOBAL SETTING */
