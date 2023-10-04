@@ -18,4 +18,3 @@ Pages:
 --------------------
 Detail
 
-HelloWorld HelloWorld

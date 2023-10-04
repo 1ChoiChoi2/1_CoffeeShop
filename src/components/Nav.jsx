@@ -6,10 +6,10 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav__container">
-        <div className="nav__logo">
+          <Link to="/" className="nav__logo">
             Coffee
             <small>Blend</small>
-        </div>
+          </Link>
         <ul className="nav__links">
             <li><Link to="/" className="nav__link">Home</Link></li>
             <li><Link to="/menu" className="nav__link">Menu</Link></li>
