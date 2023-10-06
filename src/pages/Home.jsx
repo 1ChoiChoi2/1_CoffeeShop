@@ -96,7 +96,7 @@ const Home = () => {
                   }
                   title="Easy To Order"
                   para="Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic."
+                  texts it is an almost unorthographic"
                 />
                 <Highlight
                   icon={
@@ -107,7 +107,7 @@ const Home = () => {
                   }
                   title="Fastest Delivery"
                   para="Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic."
+                  texts it is an almost unorthographic"
                 />
                 <Highlight
                   icon={
@@ -118,7 +118,7 @@ const Home = () => {
                   }
                   title="Quality Coffee"
                   para="Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic."
+                  texts it is an almost unorthographic"
                 />               
             </div>
           </div>
