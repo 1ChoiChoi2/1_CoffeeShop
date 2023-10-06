@@ -77,7 +77,7 @@
   font-weight: 300;
   display: block;
   position: relative;
-  margin-bottom: -16px;  
+  margin-bottom: -16px;
 }
 
 .landing__about--content h2 {
@@ -86,12 +86,52 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  
 }
 
 .landing__about--content p {
   font-family: var(--font-family-secondary);
   color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#landing__highlights {
+  background-color: var(--color-brown);
+}
+
+.landing__highlights--container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    align-items: center;
+}
+
+.landing__highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: var(--color-black);
+}
+
+.highlight__icon {
+  border: 1px solid var(--color-black);
+  padding: 20px;
+
+  font-size: 30px;
+  font-weight: 300;
+  align-items: center;
+}
+
+.landing__highlight h3 {
+  font-family: var(--font-family-primary);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.landing__highlight p {
+  width: 350px;
+  font-family: var(--font-family-secondary);
   font-size: 15px;
   font-weight: 300;
 }
