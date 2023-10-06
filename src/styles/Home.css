@@ -1,39 +1,97 @@
 #landing__contacts {
-    background-color: var(--color-black);
+  background-color: var(--color-black);
 }
 
 .landing__contacts--container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    justify-content: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+  /* justify-items: center; */
 }
 
 .landing__contact {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 }
 
 .landing__contact--icon {
-    color: var(--color-brown);
+  color: var(--color-brown);
 }
 
 .landing__contact--detail {
-    padding-left: 20px;
+  padding-left: 20px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .landing__contact--title {
-    font-family: var(--font-family-primary);
-    color: var(--color-white);
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
 }
 
 .landing__contact--description {
-    font-family: var(--font-family-secondary);
-    color: var(--color-grey);
-    font-size: 15px;
-    font-weight: 300;
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#landing__about {
+  display: flex;
+  position: relative;
+}
+
+.landing__about--left,
+.landing__about--right {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing__about--left {
+  background-image: url("../assets/landing_about.jpg");
+  width: 50%;
+}
+
+.landing__about--right {
+  background-image: url("../assets//black_background.jpg");
+  width: 50%;
+}
+
+.landing__about--content {
+  width: 636px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 60%);
+}
+
+.landing__about--content span {
+  font-family: var(--font-family-teitary);
+  color: var(--color-brown);
+  font-size: 50px;
+  font-weight: 300;
+  display: block;
+  position: relative;
+  margin-bottom: -16px;  
+}
+
+.landing__about--content h2 {
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+.landing__about--content p {
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
 }
