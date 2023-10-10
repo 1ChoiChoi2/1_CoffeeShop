@@ -181,3 +181,35 @@
 .gallery__container img {
   height: 100%;
 }
+
+#footer {
+  background-color: black;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 0;
+  place-items: center;
+}
+
+.footer__link,
+.footer__copyright {
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: var(--color-grey);
+  text-transform: lowercase;
+}
+

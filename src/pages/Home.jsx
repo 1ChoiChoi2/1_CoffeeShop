@@ -5,8 +5,9 @@ import Contacts from "../components/Contacts";
 import About from "../components/About";
 import Highlights from "../containers/Highlights";
 import MenuDisc from "../components/MenuDisc";
-import "../styles/Home.css";
 import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Highlights />
       <MenuDisc />
       <Gallery />
+      <Footer />
     </div>
   );
 };
