@@ -12,9 +12,6 @@ const Footer = () => {
           </Link>
           <ul className="footer__links">
             <li>
-              <Link className="footer__link">Home</Link>
-            </li>
-            <li>
               <Link className="footer__link">Menu</Link>
             </li>
             <li>
