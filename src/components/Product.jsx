@@ -10,7 +10,7 @@ const Product = ({ dish }) => {
         {dish.title}
       </a>
       <p className="product__para">{dish.description}</p>
-      <span className="product__price">${dish.price}</span>
+      <span className="product__price">${dish.price.toFixed(2)}</span>
       <button>Add to cart</button>
     </div>
   );
