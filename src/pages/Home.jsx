@@ -11,7 +11,7 @@ import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Landing
         backgroundUrl={HomeBackground}
         titleWelcome="Welcome"
@@ -25,7 +25,7 @@ const Home = () => {
       <Highlights />
       <MenuDisc />
       <Gallery />
-    </div>
+    </>
   );
 };
 
