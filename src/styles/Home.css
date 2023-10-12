@@ -1,0 +1,215 @@
+#landing__contacts {
+  background-color: var(--color-black);
+}
+
+.landing__contacts--container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+  /* justify-items: center; */
+}
+
+.landing__contact {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.landing__contact--icon {
+  color: var(--color-brown);
+}
+
+.landing__contact--detail {
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.landing__contact--title {
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+}
+
+.landing__contact--description {
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#landing__about {
+  display: flex;
+  position: relative;
+}
+
+.landing__about--left,
+.landing__about--right {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing__about--left {
+  background-image: url("../assets/landing_about.jpg");
+  width: 50%;
+}
+
+.landing__about--right {
+  background-image: url("../assets//black_background.jpg");
+  width: 50%;
+}
+
+.landing__about--content {
+  width: 636px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 60%);
+}
+
+.landing__about--content span,
+.menu__discover--content span {
+  font-family: var(--font-family-teitary);
+  color: var(--color-brown);
+  font-size: 50px;
+  font-weight: 300;
+  display: block;
+  position: relative;
+  margin-bottom: -16px;
+}
+
+.landing__about--content h2,
+.menu__discover--content h2 {
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.landing__about--content p,
+.menu__discover--content p {
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#landing__highlights {
+  background-color: var(--color-brown);
+}
+
+.landing__highlights--container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  align-items: center;
+}
+
+.landing__highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: var(--color-black);
+}
+
+.highlight__icon {
+  border: 1px solid var(--color-black);
+  padding: 20px;
+
+  font-size: 30px;
+  font-weight: 300;
+  align-items: center;
+}
+
+.landing__highlight h3 {
+  font-family: var(--font-family-primary);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.landing__highlight p {
+  width: 350px;
+  font-family: var(--font-family-secondary);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#menu__discover {
+  background-color: var(--color-black);
+}
+
+.menu__discover--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.menu__discover--content {
+  text-align: right;
+}
+
+.menu__discover--content button {
+  font-family: var(--font-family-secondary);
+  background-color: transparent;
+  color: var(--color-brown);
+  padding: 16px 24px;
+  border: 1px solid var(--color-brown);
+  font-size: 13px;
+  cursor: pointer;
+
+  margin-top: 24px;
+}
+
+.menu__discover--imgs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(255px, 1fr));
+  gap: 30px;
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+}
+
+.gallery__container img {
+  height: 100%;
+}
+
+#footer {
+  background-color: black;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 0;
+  place-items: center;
+}
+
+.footer__link,
+.footer__copyright {
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: var(--color-grey);
+  text-transform: lowercase;
+}
+

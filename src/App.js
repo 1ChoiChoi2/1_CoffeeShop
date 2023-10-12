@@ -7,6 +7,7 @@ import Menu from "./pages/Menu";
 import Blog from "./pages/Blog";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   // console.log(blogs)
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
