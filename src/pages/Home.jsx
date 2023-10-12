@@ -25,7 +25,6 @@ const Home = () => {
       <Highlights />
       <MenuDisc />
       <Gallery />
-      <Footer />
     </div>
   );
 };
