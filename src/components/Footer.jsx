@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
         </div>
         <p className="footer__copyright">
-          Copyright &copy;2023 All rights served | Made by ChoiChoi{" "}
+          Copyright &copy;2023 All rights served | Made by ChoiChoi
         </p>
       </div>
     </section>
