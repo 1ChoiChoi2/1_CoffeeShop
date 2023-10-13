@@ -8,6 +8,7 @@ const Dishes = ({ dishes, dishesTitle }) => {
       <ul className="dishes__list">
         {dishes
           .filter((dish) => dish.category === dishesTitle)
+          .slice(0, 4)
           .map((dish) => (
             <Dish key={dish.id} dish={dish} />
           ))}

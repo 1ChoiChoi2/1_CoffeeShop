@@ -21,7 +21,7 @@ const Menu = ({ dishes }) => {
 
   // Fetch Dishes by Category
   function dishesByCategory(dishCate) {
-    console.log(dishCate);
+    // console.log(dishCate);
     const dishesByCate = dishes.filter((dish) => dish.category === dishCate);
 
     setDishesByCate(dishesByCate);
