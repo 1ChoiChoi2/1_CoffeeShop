@@ -3,6 +3,7 @@ import Drink1 from "../assets/menu-1.jpg";
 import Drink2 from "../assets/menu-2.jpg";
 import Drink3 from "../assets/menu-3.jpg";
 import Drink4 from "../assets/menu-4.jpg";
+import { Link } from "react-router-dom";
 
 const MenuDisc = () => {
   return (
@@ -18,7 +19,9 @@ const MenuDisc = () => {
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean.
             </p>
-            <button>View Full Menu</button>
+            <Link to='/menu'>
+              <button>View Full Menu</button>
+            </Link>
           </div>
           <div className="menu__discover--imgs">
             <figure>

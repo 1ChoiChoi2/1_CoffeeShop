@@ -72,7 +72,8 @@
 }
 
 .landing__about--content span,
-.menu__discover--content span {
+.menu__discover--content span,
+.product__container span {
   font-family: var(--font-family-teitary);
   color: var(--color-brown);
   font-size: 50px;
@@ -83,7 +84,8 @@
 }
 
 .landing__about--content h2,
-.menu__discover--content h2 {
+.menu__discover--content h2,
+.product__container h2 {
   font-family: var(--font-family-primary);
   color: var(--color-white);
   font-size: 40px;
@@ -92,7 +94,8 @@
 }
 
 .landing__about--content p,
-.menu__discover--content p {
+.menu__discover--content p,
+.product__container p {
   font-family: var(--font-family-secondary);
   color: var(--color-grey);
   font-size: 15px;
