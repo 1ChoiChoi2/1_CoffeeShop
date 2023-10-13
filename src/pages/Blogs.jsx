@@ -16,7 +16,10 @@ const Blogs = ({ blogs }) => {
   const blogToDisplay = blogs.slice(startIndex, endIndex);
 
   // Create Array of page number
-  const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+  const pageNumbers = Array.from(
+    { length: totalPages },
+    (_, index) => index + 1
+  );
 
   // Handle Navigation
   const handlePageChange = (newPage) => {
@@ -35,15 +38,17 @@ const Blogs = ({ blogs }) => {
               ))}
             </div>
             <div className="blog__pagination">
-              {
-                pageNumbers.map(pageNumber => (
-                  <button key={pageNumber}
+              {pageNumbers.map((pageNumber) => (
+                <button
+                  key={pageNumber}
                   onClick={() => handlePageChange(pageNumber)}
-                  className={pageNumber === currentPage ? "active" : "non-active"}>
-                    {pageNumber}
-                  </button>
-                ))
-              }
+                  className={
+                    pageNumber === currentPage ? "active" : "non-active"
+                  }
+                >
+                  {pageNumber}
+                </button>
+              ))}
             </div>
           </div>
         </div>
