@@ -24,7 +24,9 @@ const DishDetail = ({ dishes }) => {
 
   // Decrement Quanity
   function decrementQuanity () {
-    setQuantity(quantity- 1);
+    if (quantity > 0) {
+      setQuantity(quantity- 1);
+    }
   }
 
   return (
