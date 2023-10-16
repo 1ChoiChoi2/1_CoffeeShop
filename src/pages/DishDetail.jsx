@@ -3,29 +3,29 @@ import { Link, useParams } from "react-router-dom";
 import Landing from "../components/Landing";
 import Product from "../components/Product";
 import singleProductBackground from "../assets/singleProductBackground.jpg";
-import "../styles/DishDetail.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/DishDetail.css";
 
 const DishDetail = ({ dishes }) => {
   const [quantity, setQuantity] = useState(0);
   const { id } = useParams();
   const dish = dishes.find((dish) => +dish.id === +id);
 
-  // Find Related Dishes 
+  // Find Related Dishes
   const relatedDishes = dishes.filter(
     (relateddish) =>
       relateddish.category === dish.category && +relateddish.id !== +id
   );
 
   // Increment Quanity
-  function incrementQuanity () {
+  function incrementQuanity() {
     setQuantity(quantity + 1);
   }
 
   // Decrement Quanity
-  function decrementQuanity () {
+  function decrementQuanity() {
     if (quantity > 0) {
-      setQuantity(quantity- 1);
+      setQuantity(quantity - 1);
     }
   }
 
