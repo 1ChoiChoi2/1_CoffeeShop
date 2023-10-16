@@ -13,7 +13,7 @@ const Blogs = ({ blogs }) => {
   const startIndex = (currentPage - 1) * blogPerPage;
   const endIndex = startIndex + blogPerPage;
 
-  const blogToDisplay = blogs.slice(startIndex, endIndex);
+  const blogToDisplay = sortByDatePosts().slice(startIndex, endIndex);
 
   // Create Array of page number
   const pageNumbers = Array.from(
@@ -25,6 +25,16 @@ const Blogs = ({ blogs }) => {
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
   };
+
+  // Convert String to Date
+  function convertStrToDate (str) {
+    return new Date(str);
+  }
+
+  // Sort by Date (Lastest Post -> Oldest Post)
+  function sortByDatePosts () {
+    return blogs.sort((a, b) => convertStrToDate(b.dateCreated) - convertStrToDate(a.dateCreated))
+  }
 
   return (
     <>
