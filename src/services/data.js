@@ -254,7 +254,7 @@ export const blogs = [
     id: 7,
     author: "Sophia Brown",
     title: "Indulgence Redefined: Decadent Desserts at Our Restaurant",
-    url: "https://i.pinimg.com/564x/b9/26/5c/b9265c87754b5eee4c7f0b4c5ba52f7d.jpg",
+    url: "https://i.pinimg.com/564x/b9/26/5c/b9265c87754b5eee4c7f0b4c5ba52f7d.jpg ",
     description:
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     dateCreated: "2025-05-19",
