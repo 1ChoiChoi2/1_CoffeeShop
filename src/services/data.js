@@ -218,7 +218,7 @@ export const blogs = [
     id: 3,
     author: "Daniel Martinez",
     title: "Behind the Scenes: Meet Our Expert Chefs",
-    url: "https://i.pinimg.com/564x/c8/a7/c3/c8a7c3a22a8f1e23c11bfe498146f2d6.jpg",
+    url: "https://i.pinimg.com/564x/e5/32/b0/e532b0f5dfc750c26c4a1eeb268b827b.jpg",
     description:
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     dateCreated: "1975-07-30",
@@ -254,7 +254,7 @@ export const blogs = [
     id: 7,
     author: "Sophia Brown",
     title: "Indulgence Redefined: Decadent Desserts at Our Restaurant",
-    url: "https://i.pinimg.com/564x/2d/0a/09/2d0a092daeccafffcb03469ebe0bccd5.jpg",
+    url: "https://i.pinimg.com/564x/b9/26/5c/b9265c87754b5eee4c7f0b4c5ba52f7d.jpg ",
     description:
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     dateCreated: "2025-05-19",

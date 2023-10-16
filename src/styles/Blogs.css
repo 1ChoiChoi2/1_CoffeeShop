@@ -1,0 +1,74 @@
+#blogs {
+  background-color: var(--color-black);
+}
+
+.blogs__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 70px;
+}
+
+.blog figure {
+  width: 350px;
+  height: 270px;
+}
+
+.blog__author--detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.blog__date,
+.blog__author {
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.blog__title {
+  width: 90%;
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.blog__description {
+  width: 350px;
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.blog__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.blog__pagination button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brown);
+  font-size: 15px;
+}
+
+.non-active {
+  color: var(--color-brown);
+}
+
+.active {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+}
