@@ -1,0 +1,97 @@
+#contact {
+  background-color: var(--color-black);
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.contact__information {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.contact__information h4 {
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+.contact__information--address,
+.contact__information--phone,
+.contact__information--email,
+.contact__information--website {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact__information span {
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.contact__information--address {
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.contact__information--phone,
+.contact__information--email,
+.contact__information--website {
+  font-family: var(--font-family-secondary);
+  color: var(--color-brown);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contact__form--personal__information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__item--label {
+  font-family: var(--font-family-secondary);
+  color: var(--color-white);
+  font-size: 15px;
+}
+
+.contact__form .form__item-1,
+.contact__form .form__item-2 {
+  width: 50%;
+}
+
+.contact__form .form__item-3,
+.contact__form .form__item-4 {
+  width: 100%;
+}
+
+.contact__form .form__item .input {
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+  outline: none;
+  border: 1px solid var(--color-grey);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+}
+
+textarea {
+    resize: unset;
+    height: 100px;
+}
