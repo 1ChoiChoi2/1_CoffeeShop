@@ -27,13 +27,16 @@ const Blogs = ({ blogs }) => {
   };
 
   // Convert String to Date
-  function convertStrToDate (str) {
+  function convertStrToDate(str) {
     return new Date(str);
   }
 
   // Sort by Date (Lastest Post -> Oldest Post)
-  function sortByDatePosts () {
-    return blogs.sort((a, b) => convertStrToDate(b.dateCreated) - convertStrToDate(a.dateCreated))
+  function sortByDatePosts() {
+    return blogs.sort(
+      (a, b) =>
+        convertStrToDate(b.dateCreated) - convertStrToDate(a.dateCreated)
+    );
   }
 
   return (
