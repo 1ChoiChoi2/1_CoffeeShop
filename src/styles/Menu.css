@@ -67,79 +67,78 @@
 }
 
 .product__container {
-    text-align: center;
+  text-align: center;
 }
 
 .product__container p {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .product__option--list__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .product__option--title {
-    font-family: var(--font-family-secondary);
-    padding: 8px 16px;
-    width: 119px;
-    color: var(--color-brown);
-    font-size: 18px;
-    border-bottom: 1px solid var(--color-brown);
-    text-align: center;
-    cursor: pointer;
+  font-family: var(--font-family-secondary);
+  padding: 8px 16px;
+  width: 119px;
+  color: var(--color-brown);
+  font-size: 18px;
+  border-bottom: 1px solid var(--color-brown);
+  text-align: center;
+  cursor: pointer;
 }
 
 .product__list {
-    padding: 20px 0;
+  padding: 20px 0;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
 }
 
 .product__img--container img {
-    width: 270px;
-    height: 270px;
-    background-position: center;
-    background-size: cover;
+  width: 270px;
+  height: 270px;
+  background-position: center;
+  background-size: cover;
 }
 
-
 .product__title {
-    font-family: var(--font-family-primary);
-    color: var(--color-white);
-    font-size: 18px;
-    text-transform: uppercase;
+  font-family: var(--font-family-primary);
+  color: var(--color-white);
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .product__para {
-    width: 220px;
-    text-align: center;
-    font-family: var(--font-family-secondary);
-    color: var(--color-grey);
-    font-size: 15px;
+  width: 220px;
+  text-align: center;
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey);
+  font-size: 15px;
 }
 
 .product__price {
-    color: var(--color-white);
-    font-size: 18px;
+  color: var(--color-white);
+  font-size: 18px;
 }
 
 .product button {
-    padding: 6px 12px;
-    background-color: var(--color-brown);
-    font-family: var(--font-family-secondary);
-    font-size: 13px;
-    border: none;
-    cursor: pointer;
+  padding: 6px 12px;
+  background-color: var(--color-brown);
+  font-family: var(--font-family-secondary);
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
 }

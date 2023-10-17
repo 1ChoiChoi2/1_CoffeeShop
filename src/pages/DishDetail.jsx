@@ -6,8 +6,8 @@ import singleProductBackground from "../assets/singleProductBackground.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/DishDetail.css";
 
-const DishDetail = ({ dishes }) => {
-  const [quantity, setQuantity] = useState(0);
+const DishDetail = ({ dishes, addToCart }) => {
+  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   const dish = dishes.find((dish) => +dish.id === +id);
 
@@ -61,7 +61,10 @@ const DishDetail = ({ dishes }) => {
                   <span>{quantity}</span>
                   <button onClick={decrementQuanity}>-</button>
                 </div>
-                <button className="product__detail--add__cart">
+                <button
+                  className="product__detail--add__cart"
+                  onClick={() => addToCart(dish, quantity)}
+                >
                   Add to Cart
                 </button>
               </div>

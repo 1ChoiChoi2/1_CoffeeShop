@@ -58,9 +58,9 @@
 }
 
 .contact__form--personal__information {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .form__item--label {
@@ -80,7 +80,6 @@
 }
 
 .contact__form .form__item .input {
-
   background-color: var(--color-black);
   color: var(--color-white);
   outline: none;
@@ -92,6 +91,6 @@
 }
 
 textarea {
-    resize: unset;
-    height: 100px;
+  resize: unset;
+  height: 100px;
 }

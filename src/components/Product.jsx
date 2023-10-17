@@ -13,7 +13,6 @@ const Product = ({ dish }) => {
         </p>
         <p className="product__para">{dish.description}</p>
         <span className="product__price">${dish.price.toFixed(2)}</span>
-        <button>Add to cart</button>
       </Link>
     </>
   );

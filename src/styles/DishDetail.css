@@ -1,105 +1,105 @@
 #product_detail {
-    background-color: var(--color-black);
+  background-color: var(--color-black);
 }
 
 .back-to-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 .back-to-menu button {
-    background: transparent;
-    border: none;
-    color: var(--color-brown);
+  background: transparent;
+  border: none;
+  color: var(--color-brown);
 }
 
 .back-to-menu span {
-    color: var(--color-brown);
-    text-transform: uppercase;
+  color: var(--color-brown);
+  text-transform: uppercase;
 }
 
 .product__detail--container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 63px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 63px;
 }
 
 .product__detail--img__container {
-    width: 540px;
-    height: 540px;
+  width: 540px;
+  height: 540px;
 }
 
 .product__detail--content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.product__detail--title{
-    font-family: var(--font-family-primary);
-    font-size: 34px;
-    color: var(--color-white);
-    text-transform: uppercase;
+.product__detail--title {
+  font-family: var(--font-family-primary);
+  font-size: 34px;
+  color: var(--color-white);
+  text-transform: uppercase;
 }
 
 .product__detail--price {
-    color: #f8b500;
-    font-size: 30px;
-    font-weight: 300;
+  color: #f8b500;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .product__detail--description {
-    font-family: var(--font-family-secondary);
-    font-size: 15px;
-    color: var(--color-grey);
-    font-weight: 300;
+  font-family: var(--font-family-secondary);
+  font-size: 15px;
+  color: var(--color-grey);
+  font-weight: 300;
 }
 
 .product__detail--quantity {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .product__detail--quantity button {
-    background-color: transparent;
-    padding: 16px 20px;
-    border: 1px solid var(--color-brown);
-    color: var(--color-brown);
-    font-size: 13px;
+  background-color: transparent;
+  padding: 16px 20px;
+  border: 1px solid var(--color-brown);
+  color: var(--color-brown);
+  font-size: 13px;
 }
 
 .product__detail--quantity span {
-    padding: 10px 20px;
-    font-family: var(--font-family-secondary);
-    border: 1px solid var(--color-brown);
-    color: var(--color-brown);
-    font-size: 18px;
-    text-align: center;
+  padding: 10px 20px;
+  font-family: var(--font-family-secondary);
+  border: 1px solid var(--color-brown);
+  color: var(--color-brown);
+  font-size: 18px;
+  text-align: center;
 }
 
 .product__detail--add__cart {
-    width: 200px;
+  width: 200px;
 
-    padding: 16px 48px;
-    border: 1px solid var(--color-brown);
-    background-color: var(--color-brown);
-    font-family: var(--font-family-secondary);
-    font-size: 13px;
-    text-align: center;
+  padding: 16px 48px;
+  border: 1px solid var(--color-brown);
+  background-color: var(--color-brown);
+  font-family: var(--font-family-secondary);
+  font-size: 13px;
+  text-align: center;
 }
 
 .related__dishes--container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .related__product--list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
