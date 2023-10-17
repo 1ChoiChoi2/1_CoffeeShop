@@ -4,7 +4,23 @@ import Landing from "../components/Landing";
 import "../styles/Cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Cart = ({ cart, removeFromCart }) => {
+const Cart = ({ cart, removeFromCart, checkout }) => {
+  // Calculate total price of the whole cart
+  const calculateSubTotalPice = () => {
+    let total = 0;
+
+    for (const cartItem of cart) {
+      total += cartItem.price * cartItem.quantity;
+    }
+
+    return total;
+  };
+
+  // Calculate total price
+  const calculateTotalPrice = () => {
+    return calculateSubTotalPice();
+  };
+
   return (
     <>
       <Landing backgroundUrl={cartBackground} subtitle="Cart" />
@@ -53,31 +69,33 @@ const Cart = ({ cart, removeFromCart }) => {
                 </div>
               ))}
             </div>
-            <div id="total">
-              <div className="total__container">
-                <h3 className="total__title">Cart Totals</h3>
-                <div className="subtotal">
-                  <span>Subtotal</span>
-                  <span>$10.00</span>
+            {cart.length > 0 ? (
+              <div id="total">
+                <div className="total__container">
+                  <h3 className="total__title">Cart Totals</h3>
+                  <div className="subtotal">
+                    <span>Subtotal</span>
+                    <span>${calculateSubTotalPice().toFixed(2)}</span>
+                  </div>
+                  <div className="delivery">
+                    <span>Delivery</span>
+                    <span></span>
+                  </div>
+                  <div className="discount">
+                    <span>Discount</span>
+                    <span></span>
+                  </div>
+                  <hr />
+                  <div className="total">
+                    <span>Total</span>
+                    <span>${calculateTotalPrice().toFixed(2)}</span>
+                  </div>
                 </div>
-                <div className="delivery">
-                  <span>Delivery</span>
-                  <span>$3.00</span>
-                </div>
-                <div className="discount">
-                  <span>Discount</span>
-                  <span>$1.00</span>
-                </div>
-                <hr />
-                <div className="total">
-                  <span>Total</span>
-                  <span>$18.00</span>
-                </div>
+                <button onClick={checkout} className="total__button">Proceed to Checkout</button>
               </div>
-              <button className="total__button">
-                Proceed to Checkout
-              </button>
-            </div>
+            ) : (
+              <h1 className="cart__empty">You have no items in cart yet !</h1>
+            )}
           </div>
         </div>
       </div>

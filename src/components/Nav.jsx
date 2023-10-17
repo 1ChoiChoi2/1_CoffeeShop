@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Nav = () => {
+const Nav = ({ cart }) => {
   return (
     <nav>
       <div className="nav__container">
@@ -35,7 +35,9 @@ const Nav = () => {
           <li>
             <Link to="/cart" className="nav__link nav__icon">
               <FontAwesomeIcon icon="shopping-cart" />
-              <span className="cart__length">2</span>
+              {cart.length > 0 && (
+                <span className="cart__length">{cart.length}</span>
+              )}
             </Link>
           </li>
         </ul>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { dishes, blogs } from "./services/data";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
@@ -11,7 +11,10 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem('coffeeShop');
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
 
   // Add Item to Cart + With Quanity
   function addToCart(dish, dishQuantity) {
@@ -35,11 +38,21 @@ function App() {
     setCart(updateCart);
   };
 
-  console.log(cart);
+  // Proceed to Checkout 
+  function checkout () {
+    setCart([])
+  }
+
+  // console.log(cart);
+
+  // Loading Local Storage
+  useEffect(() => {
+    localStorage.setItem('coffeeShop', JSON.stringify(cart))
+  }, [cart])
 
   return (
     <div className="App">
-      <Nav />
+      <Nav cart={cart} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu dishes={dishes} />} />
@@ -49,7 +62,7 @@ function App() {
         />
         <Route path="/blog" element={<Blogs blogs={blogs} />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart}/>} />
+        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} checkout={checkout}/>} />
       </Routes>
       <Footer />
     </div>
