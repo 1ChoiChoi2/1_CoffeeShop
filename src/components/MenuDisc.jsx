@@ -19,7 +19,7 @@ const MenuDisc = () => {
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean.
             </p>
-            <Link to='/menu'>
+            <Link to="/menu">
               <button>View Full Menu</button>
             </Link>
           </div>

@@ -1,7 +1,14 @@
 import React from "react";
 import "../styles/Landing.css";
 
-const Landing = ({ backgroundUrl, titleWelcome, title, subtitle, para, button }) => {
+const Landing = ({
+  backgroundUrl,
+  titleWelcome,
+  title,
+  subtitle,
+  para,
+  button,
+}) => {
   // BackGround Styling
   const backGroundStyle = {
     backgroundImage: `url(${backgroundUrl})`,

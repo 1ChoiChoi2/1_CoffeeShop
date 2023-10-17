@@ -5,9 +5,29 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faShoppingCart, faPhone, faLocationCrosshairs, faClock, faArrowUpAZ, faTruck, faCoffee, faArrowLeft, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faShoppingCart,
+  faPhone,
+  faLocationCrosshairs,
+  faClock,
+  faArrowUpAZ,
+  faTruck,
+  faCoffee,
+  faArrowLeft,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faShoppingCart, faPhone, faLocationCrosshairs, faClock, faArrowUpAZ, faTruck, faCoffee, faArrowLeft, faTimes);
+library.add(
+  faShoppingCart,
+  faPhone,
+  faLocationCrosshairs,
+  faClock,
+  faArrowUpAZ,
+  faTruck,
+  faCoffee,
+  faArrowLeft,
+  faTimes
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

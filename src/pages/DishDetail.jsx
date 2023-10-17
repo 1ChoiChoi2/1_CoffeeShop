@@ -61,7 +61,10 @@ const DishDetail = ({ dishes, addToCart }) => {
                   <span>{quantity}</span>
                   <button onClick={decrementQuanity}>-</button>
                 </div>
-                <button className="product__detail--add__cart" onClick={() => addToCart(dish, quantity)}>
+                <button
+                  className="product__detail--add__cart"
+                  onClick={() => addToCart(dish, quantity)}
+                >
                   Add to Cart
                 </button>
               </div>

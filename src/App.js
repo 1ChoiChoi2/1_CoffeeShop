@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [cart, setCart] = useState(() => {
-    const storedCart = localStorage.getItem('coffeeShop');
+    const storedCart = localStorage.getItem("coffeeShop");
     return storedCart ? JSON.parse(storedCart) : [];
   });
 
@@ -33,22 +33,22 @@ function App() {
   }
 
   // Remove Item from Cart
-  function removeFromCart (itemId) {
-    const updateCart = cart.filter(cartItem => cartItem.id !== itemId);
+  function removeFromCart(itemId) {
+    const updateCart = cart.filter((cartItem) => cartItem.id !== itemId);
     setCart(updateCart);
-  };
+  }
 
-  // Proceed to Checkout 
-  function checkout () {
-    setCart([])
+  // Proceed to Checkout
+  function checkout() {
+    setCart([]);
   }
 
   // console.log(cart);
 
   // Loading Local Storage
   useEffect(() => {
-    localStorage.setItem('coffeeShop', JSON.stringify(cart))
-  }, [cart])
+    localStorage.setItem("coffeeShop", JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <div className="App">
@@ -62,7 +62,16 @@ function App() {
         />
         <Route path="/blog" element={<Blogs blogs={blogs} />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} checkout={checkout}/>} />
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              cart={cart}
+              removeFromCart={removeFromCart}
+              checkout={checkout}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </div>

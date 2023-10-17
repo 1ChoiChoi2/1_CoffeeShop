@@ -12,13 +12,19 @@ const Footer = () => {
           </Link>
           <ul className="footer__links">
             <li>
-              <Link to='/menu' className="footer__link">Menu</Link>
+              <Link to="/menu" className="footer__link">
+                Menu
+              </Link>
             </li>
             <li>
-              <Link to='/blog' className="footer__link">Blog</Link>
+              <Link to="/blog" className="footer__link">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to='/contact' className="footer__link">Contact</Link>
+              <Link to="/contact" className="footer__link">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

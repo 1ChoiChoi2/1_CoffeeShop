@@ -91,7 +91,9 @@ const Cart = ({ cart, removeFromCart, checkout }) => {
                     <span>${calculateTotalPrice().toFixed(2)}</span>
                   </div>
                 </div>
-                <button onClick={checkout} className="total__button">Proceed to Checkout</button>
+                <button onClick={checkout} className="total__button">
+                  Proceed to Checkout
+                </button>
               </div>
             ) : (
               <h1 className="cart__empty">You have no items in cart yet !</h1>
